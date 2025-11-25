@@ -12,5 +12,4 @@ interface User_Info {
   styleUrl: './user.css',
 })
 export class User {
-  userInfo = input<User_Info>();
 }
