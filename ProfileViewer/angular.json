@@ -5,7 +5,11 @@
   "projects": {
     "ProfileViewer": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -22,8 +26,10 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ]
+            ],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           },
           "configurations": {
             "production": {
@@ -81,5 +87,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c2b774c6-5b03-4db3-b97e-715844a940e7"
   }
 }
