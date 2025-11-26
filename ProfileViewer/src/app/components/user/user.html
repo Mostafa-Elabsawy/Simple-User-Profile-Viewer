@@ -1,19 +1,15 @@
-<div class="Card container w-100  overflow-hidden  ">
+<div class="Card container w-100 h-100 overflow-hidden  ">
   <div class="Card-head">
     <img src="male.jpeg" alt="Profile Picture" class="img-fluid" />
     <div class="info">
-      <p class="name">Mostafa Elabsawy</p>
+      <p class="name">{{info.name}}</p>
       <p class="email">
         <img src="envelop.svg" alt="Email Icon" />
-        mostfaelabsawy@gmail.com
+        {{info.email}}
       </p>
     </div>
   </div>
-  <p class="description">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium vel laboriosam nulla
-    illum placeat? Cumque assumenda laudantium minus, rem ducimus dolor blanditiis eum, doloribus
-    recusandae nihil architecto? Quae, numquam.
-  </p>
+  <p class="description">{{info.bio}}</p>
 </div>
 
 <style>
